@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <title>Caesar-Verschlüsselung</title>
+    <script>
+        function verschluesseln() {
+            var text = document.getElementById("text").value;
+            var verschluesselt = "";
+            var schluessel = parseInt(document.getElementById("schluessel").value);
+
+            for (var i = 0; i < text.length; i++) {
+                var charCode = text.charCodeAt(i);
+                
+                if (charCode >= 65 && charCode <= 90) {
+                    verschluesselt += String.fromCharCode((charCode - 65 + schluessel) % 26 + 65);
+                } else if (charCode >= 97 && charCode <= 122) {
+                    verschluesselt += String.fromCharCode((charCode - 97 + schluessel) % 26 + 97);
+                } else {
+                    verschluesselt += text.charAt(i);
+                }
+            }
+
+            document.getElementById("ergebnis").innerHTML = verschluesselt;
+        }
+    </script>
+</head>
+<body>
+    <h1>Caesar-Verschlüsselung</h1>
+
+    <label for="text">Text:</label>
+    <input type="text" id="text" name="text" placeholder="Geben Sie den zu verschlüsselnden Text ein">
+
+    <label for="schluessel">Schlüssel:</label>
+    <input type="number" id="schluessel" name="schluessel" placeholder="Geben Sie den Verschlüsselungsschlüssel ein">
+
+    <button onclick="verschluesseln()">Verschlüsseln</button>
+
+    <p id="ergebnis"></p>
+</body>
+</html>
