@@ -1,0 +1,121 @@
+body {
+    background-image: url("wild-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #a51717;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #000;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a51717;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #de0d18;
+}
+
+#ergebnis {
+    margin-top: 20px;
+    font-size: 18px;
+    white-space: pre-wrap;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 150px;
+}
+
+
+.select-container select {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+    appearance: none; /* Verhindert das Betriebssystem-Styling */
+    outline: none; /* Entfernt den Fokus-Rahmen */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .select-container select:hover,
+  .select-container select:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .select-container::before {
+    content: "\25BE"; /* Unicode-Zeichen für den nach unten zeigenden Pfeil */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #000;
+    pointer-events: none; /* Verhindert, dass der Pfeil anklickbar ist */
+  }
+  
+  .select-container label {
+    margin-right: 10px;
+    position: relative;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-container button {
+    margin-left: 10px;
+}
