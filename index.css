@@ -1,121 +1,62 @@
 body {
-    background-image: url("wild-2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #000;
+    background-image: url("wild-2.jpg"); /* Hintergrundbild für de body */
+    background-size: cover; /* Bildgrössi für de bildschirm apasse */
+    background-position: center; /* Bild i de mitti vom Bilschirm posizioniere */
+    background-repeat: no-repeat; /* Hintergrundbild nöd wiederhole */
+    background-color: #000; /* Hintergrundfarb vom body */
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: flex; /* Container als Flex-Container azeige */
+    flex-direction: column; /* Aordnig vo de Elemänt im Container als Spaltä */
+    justify-content: center; /* Vertikale Zentrierig vo de Elemänt */
+    align-items: center; /* Horizontali Zentrierig vo de Elemänt */
+    height: 100vh; /* Container-Höhi uf 100% vo de Bildschirmhöhi setze */
 }
 
 .box {
-    max-width: 500px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
+    max-width: 500px; /* Maximali< Breiti vo de Box uf 500px begränzt */
+    padding: 20px; /* Innäabstand vo de Box */
+    background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarb vo de Box mit Transparänz */
+    backdrop-filter: blur(5px); /* Hintergrund unscharf machä */
+    border-radius: 10px; /* Rundi Eckä für d Box */
 }
 
 h1 {
-    font-size: 48px;
-    color: #a51717;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    font-size: 48px; /* Schriftgrössi für Überschriftä */
+    color: #a51717; /* Textfarb vo de Überschrift */
+    text-transform: uppercase; /* Text i Grossbuchstabe umwandle */
+    margin-bottom: 20px; /* Untenabstand vo de Überschrift */
 }
 
 label {
-    display: block;
-    font-size: 18px;
-    color: #000;
+    display: block; /* Labels als Blockelemänt azeige */
+    font-size: 18px; /* Schriftgrössi für Labels */
+    color: #000; /* Textfarb vo de Labels */
 }
 
 input[type="text"],
 input[type="number"] {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #000;
-    width: 100%;
-    margin-bottom: 20px;
+    padding: 10px; /* Inneabstand vo de igabefelder */
+    font-size: 16px; /* Schriftgrössi vo de Igabefelder */
+    border: none; /* Kein Rahmen um die Eingabefelder */
+    border-radius: 5px; /* Rundi Eckä für d Igabefelder */
+    background-color: rgba(255, 255, 255, 0.2); /* Hintergrundfarb vo de Igabefälder mit Transparänz */
+    color: #000; /* Textfarb vo de Igabefälder */
+    width: 100%; /* Breiti vo de Igabefälder uf 100% setzä */
+    margin-bottom: 20px; /* Unäbestand vo de Igabefälder */
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #a51717;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px; /* Innäabstand vo de Buttons */
+    font-size: 16px; /* Schriftgrössi vo de Buttons */
+    border: none; /* Kein Rahmä um dä Button */
+    border-radius: 5px; /* Rundi Eckä für dä Button */
+    background-color: #a51717; /* Hintergrundfarb vo de Buttons */
+    color: #fff; /* Textfarb vo de Buttons */
+    cursor: pointer; /* Zeiger bim Überfahrä vo de Buttons */
+    transition: background-color 0.3s ease; /* Übergangseffäkt bim Überfahrä vo de Buttons */
 }
 
 button:hover {
-    background-color: #de0d18;
-}
-
-#ergebnis {
-    margin-top: 20px;
-    font-size: 18px;
-    white-space: pre-wrap;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 100%;
-    height: 150px;
-}
-
-
-.select-container select {
-    padding: 8px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #000;
-    appearance: none; /* Verhindert das Betriebssystem-Styling */
-    outline: none; /* Entfernt den Fokus-Rahmen */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .select-container select:hover,
-  .select-container select:focus {
-    background-color: rgba(255, 255, 255, 0.4);
-  }
-  
-  .select-container::before {
-    content: "\25BE"; /* Unicode-Zeichen für den nach unten zeigenden Pfeil */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #000;
-    pointer-events: none; /* Verhindert, dass der Pfeil anklickbar ist */
-  }
-  
-  .select-container label {
-    margin-right: 10px;
-    position: relative;
-  }
-
-.button-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.button-container button {
-    margin-left: 10px;
-}
+    background-color: #de0
