@@ -6,3 +6,5 @@
 ### Weiter Infos:
 Das Feld "Schlüsselwort" wird nur zusammen mit der Vigenere Verschlüsselung
 verwendet. Falls man also mit der Vigenere Methode verschlüsseln will, muss man anstatt einen Schlüssel ein beliebiges Schlüsselwort eintragen.
+
+Datei Namen müssen 1 zu 1 übernommen werden.
