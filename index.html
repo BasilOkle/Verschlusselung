@@ -6,7 +6,7 @@
     <title>Verschlüsselung</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
-      /* CSS für das vergrößerte Bild */
+      /* CSS fürs vergrössertä Bild */
       #vergroessertesBildContainer {
         display: none;
         position: fixed;
@@ -31,7 +31,7 @@
       
     </style>
     <script>
-         // JavaScript für das vergrößerte Bild
+         // JavaScript fürs vergrössertä Bild
          function zeigeVergrößertesBild() {
         var vergrößertesBildContainer = document.getElementById(
           "vergroessertesBildContainer"
@@ -69,14 +69,14 @@
             }
           }
         } else if (verschluesselung === "xor") {
-          // XOR-Verschlüsselung
+          // XOR-Verschlüsselig
           for (var i = 0; i < text.length; i++) {
             var charCode = text.charCodeAt(i);
             var encryptedCharCode = charCode ^ schluessel;
             verschluesselt += String.fromCharCode(encryptedCharCode);
           }
         } else if (verschluesselung === "vigenere") {
-          // Vigenère-Verschlüsselung
+          // Vigenère-Verschlüsselig
           var keyword = document.getElementById("keyword").value;
           var keywordIndex = 0;
 
@@ -157,7 +157,7 @@
         style="max-width: 50px; max-height: 50px;"
       />
 
-        <!-- Container für das vergrößerte Bild -->
+        <!-- Container fürs vergrössertä Bild -->
         <div id="vergroessertesBildContainer" onclick="schließeVergrößertesBild()">
           <img
             src="jump.webp"
